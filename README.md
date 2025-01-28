@@ -1,2 +1,2 @@
 # search-bar
-[link](google.com)
+[link](www.google.com)
