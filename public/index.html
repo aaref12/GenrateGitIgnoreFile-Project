@@ -7,15 +7,18 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <h1>Search Files</h1>
-  <input type="text" id="searchInput" placeholder="Search files..." onkeyup="searchfile()">
+  <h1 id="h1">Genrate Git.Ignore Files</h1>
+  <input type="text" id="searchInput" placeholder="please enter file name..." onkeyup="searchfile()">
+ 
   <button onclick="createfile()" id="creatbtn">create</button>
   
+  <button onclick="clearcode()" id="clearbtn" >clear code</button>
+  
   <ul id="suggestionsList" ></ul>
-
-  <h2>File Content</h2>
-  <pre id="fileContent"></pre>
-  <div>
+  
+  <h2 id="fileContenttext" class="hidden">File Content</h2>
+  <pre id="fileContent" class="hidden"></pre>
+  <div id="link">
     <a href="https://github.com/aaref12/GenrateGitIgnoreFile-Project" target="_blank">source code</a>
   </div>
 

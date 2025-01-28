@@ -14,6 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/search', (req, res) => {
   const query = req.query.query || '';
   
+  
   // Read the directory contents
   fs.readdir(dataDir, (err, files) => {
     if (err) {

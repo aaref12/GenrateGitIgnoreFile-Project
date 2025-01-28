@@ -20,6 +20,8 @@ const suggestionsList=document.getElementById("suggestionsList")
             const li = document.createElement('li');
             li.textContent = file;
             
+            
+            
            li.onclick =function(){
              
             document.getElementById('searchInput').value=file
@@ -27,6 +29,8 @@ const suggestionsList=document.getElementById("suggestionsList")
             
           };  // Attach click event to open file
           suggestionsList.appendChild(li);
+          
+          document.getElementById('fileContenttext').classList.add('hidden')
          
           });
         });
@@ -42,7 +46,7 @@ const suggestionsList=document.getElementById("suggestionsList")
      
       const query=document.getElementById('searchInput').value
      const suggestionsList=document.getElementById("suggestionsList")
-
+     
 
 
   
@@ -50,21 +54,36 @@ const suggestionsList=document.getElementById("suggestionsList")
       fetch(`/search?query=${query}`)
         .then(response => response.json())
         .then(files => {
-          suggestionsList.innerHTML = '';  // Clear previous suggestions
+          
+            
+            
+          
+          suggestionsList.innerHTML = '';// Clear previous suggestions
           files.forEach(file => {
+            
             if(query===file){
                openFile(file)
             }
             
           });
+          
         });
       } else {
         suggestionsList.innerHTML = '';  // Clear suggestions if search is empty
       }
       suggestionsList.classList.remove('hidden')
+      //add file content
+      document.getElementById('fileContenttext').classList.remove('hidden')
+      document.getElementById('fileContent').classList.remove('hidden')
+      
 
     }
 
+    function clearcode(){
+      document.getElementById('fileContent').classList.add('hidden')
+     
+      
+    }
 
     
  
