@@ -1,2 +1,2 @@
 # search-bar
-[link](www.google.com)
+[link](../searchfile/public/index.html)
