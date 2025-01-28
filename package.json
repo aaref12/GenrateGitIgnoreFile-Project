@@ -1,11 +1,17 @@
 {
   "name": "searchfile",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": " nodemon -r dotenv/config app.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
 }

@@ -1,0 +1,62 @@
+/* public/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #ddd;
+    
+  }
+  
+  #searchInput {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  #suggestionsList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    max-width: 300px;
+  }
+  
+  #suggestionsList li {
+    padding: 8px;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  #suggestionsList li:hover {
+    background-color: #e1e1e1;
+  }
+  
+  #fileContent {
+    margin-top: 20px;
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  .hidden{
+    display: none;
+  }
+  button{
+  background-color: rgb(219, 192, 192);
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  text-transform: capitalize;
+  }
+  button:hover{
+  box-shadow: 2px 3px 4px black;
+  color: red;
+  
+  }
+  button:active{
+  color:white;
+  background-color: chocolate;
+  }
