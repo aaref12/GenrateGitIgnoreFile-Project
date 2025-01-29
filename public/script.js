@@ -43,8 +43,8 @@ const suggestionsList=document.getElementById("suggestionsList")
 
 
     function createfile(){
-     
-      const query=document.getElementById('searchInput').value
+     const query=document.getElementById('searchInput').value
+      
      const suggestionsList=document.getElementById("suggestionsList")
      
 
@@ -80,6 +80,9 @@ const suggestionsList=document.getElementById("suggestionsList")
     }
 
     function clearcode(){
+     document.getElementById('searchInput').value=''
+      
+
       document.getElementById('fileContent').classList.add('hidden')
      
       
